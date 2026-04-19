@@ -1,2 +1,1 @@
-# Lab 2 - Starter
-https://b7tan-cpu.github.io/Lab2_Starter/
+https://b7tan-cpu.github.io/sp26-cse110-lab3
