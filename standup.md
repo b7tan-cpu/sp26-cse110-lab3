@@ -1,19 +1,45 @@
 # Daily Standup Notes
 
 ## Date
--
+YYYY-MM-DD
 
-## Team Members
--
+## Participants
+- Name 1
+- Name 2
+- Name 3
 
-## Yesterday
-- What did you do?
+---
 
-## Today
-- What will you do?
+## What did you do yesterday?
+- Person 1:
+  - 
+- Person 2:
+  - 
 
-## Blockers
-- Any issues?
+---
 
-## Notes
--
+## What will you do today?
+- Person 1:
+  - 
+- Person 2:
+  - 
+
+---
+
+## Any blockers?
+- Person 1:
+  - None / describe issue
+- Person 2:
+  - 
+
+---
+
+## Notes / Discussion
+- 
+- 
+
+---
+
+## Action Items
+- [ ] Task 1 (Assignee)
+- [ ] Task 2 (Assignee)
