@@ -5,14 +5,28 @@
     <meta name="description" content="Meeting minutes webpage about a food discussion">
     <link rel="icon" href="favicon.ico">
     <title>Team67 Food Discussion Meeting</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+      mark {
+        background-color: lightyellow;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>🍔 Team67 Food Discussion Meeting</h1>
-      <h2>Which Food Is Actually the Best?</h2>
+    <header class="header">
+      <h1 id="main-title">🍔 Team67 Food Discussion Meeting</h1>
+      <h2 class="subtitle">Which Food Is Actually the Best?</h2>
       <h3>April 13, 2026</h3>
 
-      <nav>
+      <p class="quick-note" style="color: red;">Important note!</p>
+
+      <nav class="nav">
         <ul>
           <li><a href="#attendance">Attendance</a></li>
           <li><a href="#agenda">Agenda</a></li>
@@ -22,167 +36,150 @@
           <li><a href="#form">Form</a></li>
         </ul>
       </nav>
-      <hr>
     </header>
 
     <main>
-      
-        <section>
-          <h2>Meeting Overview</h2>
-          <p>This is our <mark>official discussion record</mark> about which food tastes the best.</p>
-          <p>Date: <time datetime="2026-04-13">April 13, 2026</time></p>
-          <blockquote>
-            "Food is the only thing we all agree on — except what food."
-          </blockquote>
-        </section>
+      <section class="card overview-card" id="overview">
+        <span class="badge">Overview</span>
+        <h2>Meeting Overview</h2>
+        <p class="highlight-box">This is our <mark>official discussion record</mark> about which food tastes the best.</p>
+        <p class="small-meta">Date: <time datetime="2026-04-13">April 13, 2026</time></p>
+        <blockquote class="quote">
+          "Food is the only thing we all agree on — except what food."
+        </blockquote>
+        <div class="hidden-example">Hidden sample text</div>
+      </section>
 
-        <hr>
+      <section id="attendance" class="card">
+        <h2>👥 Attendance</h2>
+        <div class="member-grid">
+          <div class="member">Binteng Tan</div>
+          <div class="member">Teammate A</div>
+          <div class="member">Teammate B</div>
+        </div>
+      </section>
 
-        <section id="attendance">
-          <h2>👥 Attendance</h2>
-          <ul>
-            <li>Binteng Tan</li>
-            <li>Teammate A</li>
-            <li>Teammate B</li>
-          </ul>
-        </section>
+      <section id="agenda" class="card">
+        <h2>📝 Agenda</h2>
+        <div class="agenda-grid">
+          <div class="agenda-item">Discuss favorite foods</div>
+          <div class="agenda-item">Compare sweet food and savory food</div>
+          <div class="agenda-item">Debate pizza, hotpot, burgers, and desserts</div>
+          <div class="agenda-item">Try to decide the best food</div>
+        </div>
+      </section>
 
-        <hr>
+      <section id="unfinished" class="card">
+        <h2>🍕 Unfinished Business</h2>
+        <p>We still could not agree on whether pizza or hotpot is better.</p>
+        <p>One member also argued that fries deserve their own category.</p>
+      </section>
 
-        <section id="agenda">
-          <h2>📝 Agenda</h2>
-          <ol>
-            <li>Discuss favorite foods</li>
-            <li>Compare sweet food and savory food</li>
-            <li>Debate pizza, hotpot, burgers, and desserts</li>
-            <li>Try to decide the best food</li>
-          </ol>
-        </section>
+      <section id="new" class="card">
+        <h2>🍜 New Business</h2>
+        <p>We introduced a new discussion topic: is dessert more important than the main dish?</p>
+        <p>Another question was whether drinks should be included when ranking the best food experience.</p>
+      </section>
 
-        <hr>
+      <section id="comments" class="card">
+        <h2>💬 Comments</h2>
+        <p>This meeting was <strong>deliciously productive</strong>.</p>
+        <p>Pizza is <b>popular</b>, but hotpot is also <em>hard to beat</em>.</p>
+        <p>Some people thought burgers were <i>simple but reliable</i>.</p>
+        <p>Dessert fans believed ice cream and cake should not be underestimated.</p>
+      </section>
 
-        <section id="unfinished">
-          <h2>🍕 Unfinished Business</h2>
-          <p>We still could not agree on whether pizza or hotpot is better.</p>
-          <p>One member also argued that fries deserve their own category.</p>
-        </section>
+      <section class="card">
+        <h2>📷 Meeting Media</h2>
 
-        <hr>
+        <figure>
+          <img src="food.jpg" alt="Food discussion inspiration">
+          <figcaption>Food ideas discussed during the meeting</figcaption>
+        </figure>
 
-        <section id="new">
-          <h2>🍜 New Business</h2>
-          <p>We introduced a new discussion topic: is dessert more important than the main dish?</p>
-          <p>Another question was whether drinks should be included when ranking the best food experience.</p>
-        </section>
+        <p>Audio recording:</p>
+        <audio controls>
+          <source src="food.m4a" type="audio/mp4">
+        </audio>
 
-        <hr>
+        <p>Video recording:</p>
+        <video controls width="300">
+          <source src="food.mp4" type="video/mp4">
+        </video>
+      </section>
 
-        <section id="comments">
-          <h2>💬 Comments</h2>
-          <p>This meeting was <strong>deliciously productive</strong>.</p>
-          <p>Pizza is <b>popular</b>, but hotpot is also <em>hard to beat</em>.</p>
-          <p>Some people thought burgers were <i>simple but reliable</i>.</p>
-          <p>Dessert fans believed ice cream and cake should not be underestimated.</p>
-        </section>
+      <section class="card">
+        <h2>📌 Extra Notes</h2>
+        <details>
+          <summary>Click to expand</summary>
+          <p>Final conclusion: everyone has different tastes, so the safest answer was to eat everything.</p>
+        </details>
+      </section>
 
-        <hr>
+      <section id="form" class="card">
+        <h2>🧾 Feedback Form</h2>
+        <form>
+          <fieldset>
+            <legend>Food Discussion Feedback</legend>
 
-        <section>
-          <h2>📷 Meeting Media</h2>
+            <p class="form-row">
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name" list="names">
+            </p>
 
-          <figure>
-            <img src="food.jpg" alt="Food discussion inspiration" width="300">
-            <figcaption>Food ideas discussed during the meeting</figcaption>
-          </figure>
+            <datalist id="names">
+              <option value="Wenxin Hu"></option>
+              <option value="Teammate A"></option>
+              <option value="Teammate B"></option>
+            </datalist>
 
-          <p>Audio recording:</p>
-          <audio controls>
-            <source src="food.m4a" type="audio/mpeg">
-          </audio>
+            <p class="form-row">
+              <label for="date">Date:</label><br>
+              <input type="date" id="date" name="date">
+            </p>
 
-          <p>Video recording:</p>
-          <video controls width="300">
-            <source src="food.mp4" type="video/mp4">
-          </video>
-        </section>
+            <p>Which foods did you support?</p>
 
-        <hr>
+            <input type="checkbox" id="pizza" name="food" value="pizza">
+            <label for="pizza">Pizza</label><br>
 
-        <section>
-          <h2>📌 Extra Notes</h2>
-          <details>
-            <summary>Click to expand</summary>
-            <p>Final conclusion: everyone has different tastes, so the safest answer was to eat everything.</p>
-          </details>
-        </section>
+            <input type="checkbox" id="hotpot" name="food" value="hotpot">
+            <label for="hotpot">Hotpot</label><br>
 
-        <hr>
+            <input type="checkbox" id="burger" name="food" value="burger">
+            <label for="burger">Burger</label><br><br>
 
-        <section id="form">
-          <h2>🧾 Feedback Form</h2>
-          <form>
-            <fieldset>
-              <legend>Food Discussion Feedback</legend>
+            <p>Was this food discussion helpful?</p>
 
-              <p>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" list="names">
-              </p>
+            <input type="radio" id="yes" name="helpful" value="yes">
+            <label for="yes">Yes</label><br>
 
-              <datalist id="names">
-                <option value="Wenxin Hu"></option>
-                <option value="Teammate A"></option>
-                <option value="Teammate B"></option>
-              </datalist>
+            <input type="radio" id="no" name="helpful" value="no">
+            <label for="no">No</label><br><br>
 
-              <p>
-                <label for="date">Date:</label><br>
-                <input type="date" id="date" name="date">
-              </p>
+            <p class="form-row">
+              <label for="role">Role:</label><br>
+              <select id="role" name="role">
+                <option value="leader">Leader</option>
+                <option value="member">Member</option>
+                <option value="recorder">Recorder</option>
+              </select>
+            </p>
 
-              <p>Which foods did you support?</p>
+            <p class="form-row">
+              <label for="comment">What food do you think should win?</label><br>
+              <textarea id="comment" name="comment" rows="4" cols="40"></textarea>
+            </p>
 
-              <input type="checkbox" id="pizza" name="food" value="pizza">
-              <label for="pizza">Pizza</label><br>
-
-              <input type="checkbox" id="hotpot" name="food" value="hotpot">
-              <label for="hotpot">Hotpot</label><br>
-
-              <input type="checkbox" id="burger" name="food" value="burger">
-              <label for="burger">Burger</label><br><br>
-
-              <p>Was this food discussion helpful?</p>
-
-              <input type="radio" id="yes" name="helpful" value="yes">
-              <label for="yes">Yes</label><br>
-
-              <input type="radio" id="no" name="helpful" value="no">
-              <label for="no">No</label><br><br>
-
-              <p>
-                <label for="role">Role:</label><br>
-                <select id="role" name="role">
-                  <option value="leader">Leader</option>
-                  <option value="member">Member</option>
-                  <option value="recorder">Recorder</option>
-                </select>
-              </p>
-
-              <p>
-                <label for="comment">What food do you think should win?</label><br>
-                <textarea id="comment" name="comment" rows="4" cols="40"></textarea>
-              </p>
-
-              <button type="submit">Submit</button>
-            </fieldset>
-          </form>
-        </section>
-      
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
 
-    <footer>
-      <hr>
-      <p>Created for the Intro to HTML Lab</p>
+    <footer class="footer">
+      <hr class="rule-demo">
+      <p class="print-note">Created for the Intro to HTML Lab</p>
     </footer>
   </body>
 </html>
